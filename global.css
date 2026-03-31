@@ -1,0 +1,102 @@
+/* 🔹 Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🔹 Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+/* 🔹 Container Utility */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 🔹 Logo */
+.logo {
+  font-weight: 700;
+  font-size: 22px;
+  background: linear-gradient(90deg, #22d3ee, #14b8a6);
+  background-clip: text;
+  color: transparent;
+}
+
+/* 🔹 Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 🔹 Buttons */
+.btn {
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+/* Primary */
+.primary {
+  background: #22d3ee;
+  color: #020617;
+}
+
+/* Secondary */
+.secondary {
+  border: 1px solid #22d3ee;
+  color: #22d3ee;
+}
+
+/* Hover */
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(34, 211, 238, 0.2);
+}
+
+/* 🔹 Text Helpers */
+.text-center {
+  text-align: center;
+}
+
+/* 🔹 Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #22d3ee;
+  border-radius: 10px;
+}
+
+/* 🔹 Animations (Reusable) */
+.fade-up {
+  animation: fadeUp 0.8s ease;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Choose Role</title>
+  <link rel="stylesheet" href="/css/auth.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Who are you? 🤔</h1>
+
+  <div class="options">
+    <div class="card" onclick="goStudent()">
+      <h2>👨‍🎓 Student</h2>
+      <p>Looking for internships</p>
+    </div>
+
+    <div class="card" onclick="goCompany()">
+      <h2>🏢 Company</h2>
+      <p>Hiring interns</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function goStudent() {
+  window.location.href = "/Html/student-auth.html";
+}
+
+function goCompany() {
+  window.location.href = "/Html/company-auth.html";
+}
+</script>
+
+</body>
+</html>

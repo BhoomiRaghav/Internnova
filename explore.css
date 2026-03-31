@@ -1,0 +1,89 @@
+body {
+  background: #0f172a;
+  color: white;
+  font-family: Poppins;
+  padding: 40px;
+}
+
+/* HEADER */
+h1 {
+  margin-bottom: 10px;
+}
+
+/* SEARCH */
+#searchInput {
+  width: 100%;
+  padding: 12px;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: none;
+  background: #020617;
+  color: white;
+}
+
+/* FILTER */
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters button {
+  margin-right: 10px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #1e293b;
+  color: white;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #22d3ee;
+  color: black;
+}
+
+/* GRID */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: #1e293b;
+  padding: 18px;
+  border-radius: 12px;
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.company {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* DEMAND */
+.high { color: #ef4444; }
+.medium { color: #facc15; }
+.low { color: #22c55e; }
+
+.bar {
+  height: 5px;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #22d3ee;
+  color: black;
+  cursor: pointer;
+}

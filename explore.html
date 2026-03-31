@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Explore Internships</title>
+  <link rel="stylesheet" href="/css/explore.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<h1>Explore Internships 📊</h1>
+
+<input type="text" id="searchInput" placeholder="Search by role or company...">
+
+<div class="filters">
+  <button onclick="filterData('all')">All</button>
+  <button onclick="filterData('high')">High 🔥</button>
+  <button onclick="filterData('medium')">Medium ⚡</button>
+  <button onclick="filterData('low')">Low 🟢</button>
+</div>
+
+<canvas id="demandChart" height="100"></canvas>
+
+<div class="cards" id="exploreContainer"></div>
+
+<script src="/js/explore.js"></script>
+
+</body>
+</html>

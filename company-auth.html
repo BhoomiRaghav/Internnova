@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Company Auth</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/auth.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1 id="title">Company Login 🏢</h1>
+
+  <input type="email" id="email" placeholder="Company Email">
+  <input type="password" id="password" placeholder="Password">
+
+  <button onclick="handleAuth()" id="mainBtn">Login</button>
+
+  <p id="switchText" onclick="toggleMode()">
+    Don't have an account? Register
+  </p>
+
+</div>
+
+<script src="/js/company-auth.js"></script>
+
+</body>
+</html>

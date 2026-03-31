@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Company Dashboard</title>
+  <link rel="stylesheet" href="/css/company.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <h2>Internova</h2>
+
+    <ul>
+      <li class="active">Dashboard</li>
+      <li onclick="goToPost()">Post Job</li>
+      <li onclick="goToExplore()">Explore 🔍</li>
+    </ul>
+  </aside>
+
+  <div class="main">
+
+    <header class="navbar">
+      <h3>Company Dashboard</h3>
+
+      <div>
+        <span onclick="logout()" style="cursor:pointer;">Logout 🚪</span>
+      </div>
+    </header>
+
+    <div class="stats">
+      <div class="card">
+        <h4>Total Jobs</h4>
+        <p id="totalJobs">0</p>
+      </div>
+
+      <div class="card">
+        <h4>Total Applicants</h4>
+        <p id="totalApplicants">0</p>
+      </div>
+    </div>
+
+    <div class="cards" id="jobsContainer"></div>
+
+  </div>
+
+</div>
+
+<script src="/js/company.js"></script>
+</body>
+</html>

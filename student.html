@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <h2>Internova</h2>
+
+      <ul>
+        <li class="nav-item active" data-page="dashboard">Dashboard</li>
+        <li class="nav-item" data-page="internships">Internships</li>
+        <li class="nav-item" data-page="applications">Applications</li>
+        <li><button onclick="goToExplore()" style="cursor:pointer;">
+            Explore 🔍
+          </button>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="main">
+      <header class="navbar">
+        <h3 id="page-title">Dashboard</h3>
+        <span onclick="logout()">Logout 🚪</span>
+      </header>
+
+      <section id="content"></section>
+    </div>
+
+    <div id="toast-container"></div>
+
+  </div>
+
+  <script src="/js/student.js"></script>
+</body>
+
+</html>
